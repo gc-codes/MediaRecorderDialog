@@ -62,9 +62,10 @@ class SoundDialog extends Dialog implements View.OnClickListener,SeekBar.OnSeekB
         setListeners();
         recorder = new MediaRecorder();
         recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        recorder.setOutputFormat(GenralAtteribute.outPutFormat.getValue());
-        recorder.setAudioEncoder(GenralAtteribute.audioEncoder.getValue());
-        path="/sdcard/Music/"+System.currentTimeMillis()+".3gp";
+        recorder.setOutputFormat(GenralAtteribute.outPutFormat);
+        recorder.setAudioEncoder(GenralAtteribute.audioEncoder);
+        path = activity.getExternalCacheDir().getPath() + "/" + System.currentTimeMillis() + ".aac";
+//        path="/sdcard/Music/"+System.currentTimeMillis()+".3gp";
         recorder.setOutputFile(path);
         this.setOnDismissListener(this);
 
@@ -198,9 +199,6 @@ class SoundDialog extends Dialog implements View.OnClickListener,SeekBar.OnSeekB
         handler.postDelayed(runnable, 1000);
 
     }
-
-
-
 
     @Override
     public void onDismiss(DialogInterface dialogInterface) {

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MediaRecorderDialog.iml" filepath="$PROJECT_DIR$/MediaRecorderDialog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libary/libary.iml" filepath="$PROJECT_DIR$/libary/libary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MediaRecorderDialog.iml" filepath="$PROJECT_DIR$/.idea/modules/MediaRecorderDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MediaRecorderDialog.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MediaRecorderDialog.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libary/MediaRecorderDialog.libary.iml" filepath="$PROJECT_DIR$/.idea/modules/libary/MediaRecorderDialog.libary.iml" />
     </modules>
   </component>
 </project>

@@ -45,7 +45,7 @@
         android:layout_height="match_parent"
         >
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             app:backgroundTint="@color/media_recorder_colorPrimary"
             android:src="@drawable/ic_mic_none_white_24dp"
             style="@style/FABStyle" />
@@ -136,6 +136,7 @@
                 <SeekBar
                     android:id="@+id/record_progress_bar"
                     android:max="15"
+                    android:visibility="gone"
                     style="@style/BarStyle" />
 
 

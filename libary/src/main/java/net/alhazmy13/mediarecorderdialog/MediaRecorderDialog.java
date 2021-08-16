@@ -2,6 +2,7 @@ package net.alhazmy13.mediarecorderdialog;
 
 import android.Manifest;
 import android.content.Context;
+import android.media.MediaRecorder;
 
 import net.alhazmy13.gota.Gota;
 import net.alhazmy13.gota.GotaResponse;
@@ -19,8 +20,8 @@ public class MediaRecorderDialog  {
           GenralAtteribute.context=context;
             GenralAtteribute.title="";
             GenralAtteribute.message="";
-            GenralAtteribute.outPutFormat=OutputFormat.MPEG_4;
-            GenralAtteribute.audioEncoder=AudioEncoder.AAC;
+            GenralAtteribute.outPutFormat = MediaRecorder.OutputFormat.MPEG_4;
+            GenralAtteribute.audioEncoder = MediaRecorder.AudioEncoder.AAC;
         }
         public MediaRecorderDialog.Builder setTitle(String title) {
             GenralAtteribute.title=title;
@@ -43,12 +44,12 @@ public class MediaRecorderDialog  {
             return this;
         }
 
-        public MediaRecorderDialog.Builder setOutputFormat(OutputFormat outputFormat){
+        public MediaRecorderDialog.Builder setOutputFormat(int outputFormat){
             GenralAtteribute.outPutFormat=outputFormat;
             return this;
         }
 
-        public MediaRecorderDialog.Builder setAudioEncoder(AudioEncoder audioEncoder){
+        public MediaRecorderDialog.Builder setAudioEncoder(int audioEncoder){
             GenralAtteribute.audioEncoder=audioEncoder;
             return this;
         }
